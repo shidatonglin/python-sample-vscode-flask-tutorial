@@ -6,7 +6,7 @@ url = 'www.biying.com'
 
 def test():
     print('This is print from azure pipeline')
-    driver = webdriver.Chrome(driver_path)
+    driver = webdriver.Chrome()
     driver.get(url)
 
 if __name__ == '__main__':
