@@ -24,7 +24,7 @@ steps:
   inputs:
     versionSpec: '3.6'
   displayName: 'Use Python 3.6'
-
+- script: echo hello from $ChromeWebDriver
 - script: python test.py
 
 
