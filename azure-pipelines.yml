@@ -25,8 +25,8 @@ steps:
     versionSpec: '3.6'
   displayName: 'Use Python 3.6'
 - script: echo hello from1 $env:ChromeWebDriver
-- script: echo hello from2 $(env:ChromeWebDriver)
-- script: echo hello from3 ($env:ChromeWebDriver)
+- script: python -m pip install --upgrade selenium
+  displayName: 'Install tools'
 - script: python test.py
 
 
