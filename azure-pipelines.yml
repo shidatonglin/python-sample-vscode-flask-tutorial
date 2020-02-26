@@ -24,6 +24,11 @@ steps:
   inputs:
     versionSpec: '3.6'
   displayName: 'Use Python 3.6'
+
+- pwsh: |
+    echo "##vso[task.prependpath]$env:CHROMEWEBDRIVER"
+  displayName: Adds ChromeWebDriver for Selenium to PATH 
+
 - script: echo hello from1 $env:ChromeWebDriver
 - script: python -m pip install --upgrade selenium
 - script: python test.py
