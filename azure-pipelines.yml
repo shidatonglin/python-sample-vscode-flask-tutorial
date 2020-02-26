@@ -24,7 +24,9 @@ steps:
   inputs:
     versionSpec: '3.6'
   displayName: 'Use Python 3.6'
-- script: echo hello from $ChromeWebDriver
+- script: echo hello from1 $env:ChromeWebDriver
+- script: echo hello from2 $(env:ChromeWebDriver)
+- script: echo hello from3 ($env:ChromeWebDriver)
 - script: python test.py
 
 
