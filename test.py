@@ -1,3 +1,5 @@
+from selenium import webdriver
+
 #$env:CHROMEWEBDRIVER
 driver_path = ''
 url = 'www.biying.com'
